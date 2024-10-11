@@ -648,6 +648,10 @@ video {
   margin-left: 2rem;
 }
 
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -672,6 +676,10 @@ video {
   margin-top: 10rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -680,12 +688,24 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .-translate-x-1\/2 {
@@ -706,8 +726,16 @@ video {
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-x-12 {
@@ -720,9 +748,18 @@ video {
        column-gap: 1.25rem;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 .gap-x-9 {
   -moz-column-gap: 2.25rem;
        column-gap: 2.25rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .rounded-xl {
@@ -743,12 +780,21 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-c1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 207 59 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-14 {
@@ -777,6 +823,10 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-sixtyfour-convergence {
+  font-family: Sixtyfour Convergence, sans-serif;
 }
 
 .text-2xl {
@@ -838,8 +888,25 @@ video {
   font-weight: 600;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-c1 {
@@ -850,6 +917,11 @@ video {
 .text-c3 {
   --tw-text-opacity: 1;
   color: rgb(129 129 129 / var(--tw-text-opacity));
+}
+
+.text-cyan-600 {
+  --tw-text-opacity: 1;
+  color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 
 .text-nav {
@@ -914,20 +986,4 @@ video {
 .hover\:text-c1:hover {
   --tw-text-opacity: 1;
   color: rgb(254 207 59 / var(--tw-text-opacity));
-}
-
-.hover\:transition:hover {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.hover\:duration-700:hover {
-  transition-duration: 700ms;
-}
-
-.hover\:ease-in-out:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

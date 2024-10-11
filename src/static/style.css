@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hd {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: sem;
+  color: white;
+}
+.box {
+  max-width: 600px;
+}
+h1 {
+  font-size: sem;
+}
+p {
+  font-size: 1.2em;
+}
+iframe {
+  border-radius: 2em;
+  border: spx solid #fecf3b;
+  width: 500px;
+  height: 500px;
+  opacity: 0.7;
+  transtion: 0.3s ease-in-out;
+}
+iframe:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}

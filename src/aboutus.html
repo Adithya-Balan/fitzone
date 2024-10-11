@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Fitzone</title>
+  <head>
+    <link href="./static/output.css" rel="stylesheet">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .about {
+      max-width: 1200px;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #fecf3b;
+      font-size: 48px;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    .image {
+      margin: 30px;
+      max-width: 450px; 
+      transition: transform 0.3s;
+    }
+
+    .image img {
+      width: 450px;
+      height: 450px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .image:hover {
+      transform: scale(1.05);
+    }
+    
+    .btn {
+      background-color: #fecf3b;
+      color: black;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    .btn:hover {
+      background-color: #d1a630;
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-3 left-0 w-full z-10 bg-transparent flex flex-row justify-between mt-3 text-xl fixed text-nav drop-shadow-2xl">
+    <div class="ml-10">
+        <a href="./index.html" class="hover:text-c1">FitZone</a>
+    </div>
+
+    <div class="flex flex-row gap-x-9 mr-10">
+      <a href="./aboutus.html" class="hover:text-c1" >About Us</a>
+      <a href="./teamb.html" class="hover:text-c1" >Find Your Gym</a>
+      <a href="./equipments.html" class="hover:text-c1">Equipments</a>
+      <a href="./join-us.html" class="hover:text-c1">Join Now</a>
+    </div>
+</nav>
+
+  <video class="video" autoplay muted loop>
+    <source src="./assests/home.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay">
+    <div class="about">
+      <h1>Welcome to Fitzone</h1>
+      <p>
+        At Fitzone, we believe in the power of fitness to transform lives. Located in the heart of the city, our state-of-the-art facility offers cutting-edge equipment, expert trainers, and a motivating atmosphere that will help you achieve your fitness goals.
+      </p>
+      
+      <div class="images">
+        <div class="image">
+          <img src="./assests/i1.png" alt="Trainer 1"> 
+        </div>
+        <div class="image">
+          <img src="./assests/img2.jpeg" alt="Gym Facility"> 
+        </div>
+        <div class="image">
+          <img src="https://pbs.twimg.com/media/F3vPx3QaAAAzCAY?format=jpg&name=4096x4096" alt="Fitness Class">
+        </div>
+      </div>
+
+      <p>
+        Whether you're looking to build strength, improve flexibility, or simply maintain a healthy lifestyle, Fitzone is the perfect place for you. Our wide range of classes, from high-intensity interval training (HIIT) to yoga and spin, are designed to challenge and inspire you. 
+      </p>
+
+      <p>
+        Join us today, and let’s build a fitter, stronger, and healthier version of yourself. Experience the energy and passion that makes Fitzone the top choice for fitness enthusiasts!
+      </p>
+
+      <a href="./join-us.html" class="btn">Join Us</a>
+    </div>
+  </div>
+  
+  <footer class="relative bg-black text-white">
+
+    <hr class="font-semibold text-bl text-center ml-9" style="width: 95%; ">
+     <div class="flex flex-row justify-between mt-20">
+        <p class="ml-10 font-mono font-semibold text-xl">@FITZONE</p>
+
+        <div class="flex flex-row gap-x-8 mr-10">
+            <img src="./assests/instagram.svg" alt="" height="25px" width="25px">
+            <img src="./assests/facebook.svg" alt="" height="35px" width="35px">
+            <img src="./assests/youtube.svg" alt="" height="25px" width="25px">
+            <img src="./assests/spotify.svg" alt="" height="25px" width="25px">
+        </div>
+    </div>
+
+    <div class="bg-c1 mt-10 text-black flex flex-row justify-around">
+
+        <div class="flex flex-col gap-y-4 p-10">
+            <p class="text-lg font-f2 font-semibold">In Proud Parnership with</p>
+            <img src="./assests/asy.jpeg" alt="" height="60px" width="60px">
+            <p>© All Rights Reserved.</p>
+        </div>
+        
+        <div class="mt-10">
+            <p class="text-lg font-f2 font-semibold">Developed By-</p><br>
+            <div class="text-xl font-extralight font-bebas-neue-regular">
+                <p>Trijal</p>
+                <p>Ragavi</p>
+                <p>Faleesha</p>
+                <p>Yeshwanth</p>
+                <p>Adithya</p>
+            </div><br>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>

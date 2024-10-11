@@ -17,8 +17,11 @@ module.exports = {
       },
       fontFamily:{
         'bebas-neue-regular': ['Bebas Neue', 'sans-serif'],
-        'f2': ['helvetica-extended', 'sans-serif']
+        'f2': ['helvetica-extended', 'sans-serif'],
+        'sixtyfour-convergence': ['Sixtyfour Convergence', 'sans-serif']
       },
+
+
 
     },
   },
