@@ -10,9 +10,16 @@ module.exports = {
         'nav': "#ffffff",
         'c4': "#e8e8e8",
       },
-      fontWeight:{
-        'extra': "1020",
-      }
+      fontWeight: {
+        '1000': '1000',
+        '1100': '1100',
+        '1120': '1120',
+      },
+      fontFamily:{
+        'bebas-neue-regular': ['Bebas Neue', 'sans-serif'],
+        'f2': ['helvetica-extended', 'sans-serif']
+      },
+
     },
   },
   plugins: [],
