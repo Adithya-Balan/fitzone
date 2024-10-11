@@ -38,3 +38,51 @@ iframe:hover {
   transform: scale(1.1);
   opacity: 1;
 }
+
+.animate1{
+  animation: animate1;
+  animation-timeline: view();
+  animation-range: start 0 cover 40%;
+}
+
+@keyframes animate1 {
+  from{
+    margin-left: -900px;
+  } 
+  to{
+    margin-left: 100px;
+  }
+}
+
+.animate2{
+  animation: animate2;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+@keyframes animate2 {
+  from{
+    scale: 0;
+  } 
+  to{
+    scale: 1;
+  }
+}
+
+
+.animate3{
+  animation: animate3;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+@keyframes animate3 {
+  from{
+    margin-left: -400px;
+  } 
+  to{
+    margin-left: 100px;
+  }
+}
+
+

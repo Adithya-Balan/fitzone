@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.navbar .nav-links a:hover {
+    color: goldenrod;
+}
+
+/* Header Section */
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px; /* Offset for fixed navbar */
+}
+
+.header-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.header-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+.header-content h2 {
+    font-size: 24px;
+}
+
+.header-image {
+    flex: 1;
+
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Equipment Section */
+.equipment-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.equipment-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.equipment-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.equipment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.equipment-item {
+    position: relative;
+    margin: 15px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.equipment-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.equipment-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.equipment-item:hover img {
+    transform: scale(1.1);
+}
+
+.equipment-item:hover .overlay {
+    opacity: 1;
+}
+
+.equipment-name {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+}
+
+
+.animate1{
+    animation: animate1;
+    animation-timeline: view();
+    animation-range: start 0 cover 40%;
+  }
+  
+  @keyframes animate1 {
+    from{
+      margin-left: -900px;
+    } 
+    to{
+      margin-left: 100px;
+    }
+  }
+  
+  .animate2{
+    animation: animate2;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+  }
+  
+  @keyframes animate2 {
+    from{
+      scale: 0;
+    } 
+    to{
+      scale: 1;
+    }
+  }
+  
+  
+  .animate3{
+    animation: animate3;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+  }
+  
+  @keyframes animate3 {
+    from{
+      margin-left: -400px;
+    } 
+    to{
+      margin-left: 100px;
+    }
+  }
+  
+  
+  

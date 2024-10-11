@@ -20,9 +20,6 @@ module.exports = {
         'f2': ['helvetica-extended', 'sans-serif'],
         'sixtyfour-convergence': ['Sixtyfour Convergence', 'sans-serif']
       },
-
-
-
     },
   },
   plugins: [],
